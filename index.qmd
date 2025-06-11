@@ -1,0 +1,3 @@
+# Projeto Integrador III
+
+Este documento apresenta a documentação formal do projeto de inteligência artificial desenvolvido pela equipe como parte da disciplina Projeto Integrador III.

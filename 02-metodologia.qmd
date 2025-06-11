@@ -1,0 +1,11 @@
+# Metodologia
+
+Explique como o projeto foi desenvolvido: metodologia ágil utilizada, etapas de desenvolvimento, ferramentas.
+
+## Tecnologias e Ferramentas
+
+- RAG com LlamaIndex e OpenAI
+- Orquestração com N8N
+- Frontend em React, Backend em FastAPI
+- Base vetorizada em FAISS
+- GitHub Actions para CI/CD
