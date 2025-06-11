@@ -1,3 +1,10 @@
 # Introdução
 
-Descreva o contexto, o problema que o projeto pretende resolver e os objetivos gerais.
+A presença dos estudantes em sala de aula tem sido historicamente apontada como um dos fatores que influenciam o desempenho acadêmico. Em um contexto educacional cada vez mais orientado por dados, compreender como a frequência impacta as notas dos alunos pode oferecer insights relevantes para instituições de ensino, professores e gestores.
+
+Este projeto tem como objetivo principal analisar a relação entre a presença em sala de aula e o desempenho acadêmico dos alunos, utilizando técnicas de **Análise de Séries Temporais**. A proposta é investigar, ao longo do tempo, padrões que possam indicar correlações significativas entre frequência e aproveitamento escolar.
+
+A partir de dados estruturados contendo registros de frequência e notas, aplicaremos métodos estatísticos e computacionais para identificar tendências, sazonalidades e variações que possam apoiar a formulação de estratégias pedagógicas mais eficazes. A análise será desenvolvida com o suporte de ferramentas da linguagem de programação Python, permitindo uma abordagem replicável e escalável.
+
+A relevância do estudo se justifica diante dos desafios contemporâneos da educação, especialmente em períodos pós-pandemia, nos quais a evasão e a queda de rendimento tornaram-se ainda mais críticas. Assim, espera-se que os resultados obtidos contribuam para a compreensão mais profunda do comportamento estudantil e orientem ações de intervenção com base em dados.
+

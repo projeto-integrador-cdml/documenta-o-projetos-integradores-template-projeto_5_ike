@@ -1,3 +1,30 @@
-# Projeto Integrador III
+# Projeto Integrador I
 
-Este documento apresenta a documentação formal do projeto de inteligência artificial desenvolvido pela equipe como parte da disciplina Projeto Integrador III.
+---
+title: "Análise de Desempenho Acadêmico com Base na Frequência em Sala"
+author: "Ike Gabriel Rodrigues de Kenard, Leonardo de Lima Amaral, Alessandra Gonçalves de Souza"
+date: "2025"
+format:
+  pdf:
+    toc: true
+    number-sections: true
+---
+
+# Apresentação Geral
+
+Este relatório tem como objetivo apresentar o desenvolvimento do Projeto Integrador I do curso de Ciência de Dados e Machine Learning do Centro Universitário de Brasília (CEUB). O projeto foi idealizado com foco na automatização da coleta de presença dos alunos em sala de aula e na análise da relação entre frequência e desempenho acadêmico, utilizando conceitos e ferramentas de ciência de dados.
+
+A proposta surgiu da necessidade de tornar o processo de chamada mais eficiente, confiável e capaz de fornecer informações relevantes para a gestão acadêmica. Para isso, foi projetado um sistema que integra hardware (RFID UHF), backend (API para ingestão de dados em tempo real), pipelines de tratamento e dashboards analíticos.
+
+Do ponto de vista analítico, o projeto aplica técnicas de Análise de Séries Temporais para compreender como a frequência dos estudantes evolui ao longo do tempo e de que forma ela se correlaciona com suas notas. Essa abordagem visa oferecer insights acionáveis para professores e coordenadores sobre o comportamento dos alunos.
+
+O trabalho está estruturado em cinco capítulos, além desta introdução:
+
+- **Capítulo 1 – Introdução**: apresenta o problema, os objetivos e a justificativa da proposta.
+- **Capítulo 2 – Metodologia**: descreve as etapas de desenvolvimento e as ferramentas utilizadas.
+- **Capítulo 3 – Desenvolvimento**: detalha a implementação técnica do sistema.
+- **Capítulo 4 – Resultados**: exibe gráficos, análises e métricas obtidas.
+- **Capítulo 5 – Conclusão**: discute os aprendizados e as possibilidades de evolução do projeto.
+
+Espera-se que esta iniciativa contribua para uma gestão educacional mais inteligente, baseada em dados confiáveis e análises precisas.
+

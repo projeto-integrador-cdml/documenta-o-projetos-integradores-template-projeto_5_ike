@@ -9,3 +9,39 @@ Explique como o projeto foi desenvolvido: metodologia ágil utilizada, etapas de
 - Frontend em React, Backend em FastAPI
 - Base vetorizada em FAISS
 - GitHub Actions para CI/CD
+
+# Metodologia
+
+O desenvolvimento deste projeto foi orientado por uma abordagem iterativa e incremental, inspirada nos princípios da metodologia ágil. O foco foi construir uma solução funcional e ajustável ao longo das etapas, com entregas parciais que permitiram validar hipóteses e ajustar a arquitetura conforme necessário.
+
+## Etapas de Desenvolvimento
+
+O projeto foi dividido em três grandes frentes de atuação: **hardware e instalação**, **backend e processamento de dados**, e **visualização de dados**.
+
+### 1. Hardware e Instalação
+
+A primeira fase envolveu a instalação de dispositivos de identificação por radiofrequência (RFID UHF) nas portas das salas de aula. Foi realizada a configuração e o posicionamento estratégico das antenas, com testes de leitura e ajustes para garantir cobertura adequada. Essa etapa foi essencial para garantir a captação precisa dos dados de entrada e saída dos alunos.
+
+### 2. Backend e Pipeline de Dados
+
+Na segunda etapa, foi definido o modelo de dados e criado o schema em um banco relacional (SQL Server ou MySQL). Para ingestão dos eventos de presença em tempo real, foi desenvolvida uma API utilizando os frameworks **FastAPI** ou **Flask**. Em seguida, implementou-se um pipeline de tratamento dos dados com a biblioteca **Pandas**, envolvendo limpeza, remoção de duplicidades e validação das leituras. A partir desses dados tratados, foi possível calcular o tempo de permanência em sala e classificar saídas breves.
+
+### 3. Dashboards e Relatórios
+
+A última etapa focou na visualização dos dados. Foram definidos KPIs como **taxa de presença**, **taxa de evasão** e **tempo médio de permanência**. O **Power BI** foi conectado ao banco de dados para permitir a atualização automatizada dos relatórios. Os dashboards incluem filtros por turma, sala e período, permitindo uma análise detalhada por parte dos coordenadores e professores.
+
+## Ferramentas Utilizadas
+
+- **RFID UHF**: tecnologia de identificação para captação da presença.
+- **SQL Server/MySQL**: armazenamento relacional dos dados.
+- **FastAPI / Flask**: ingestão de eventos de presença via API.
+- **Python / Pandas**: tratamento, análise e validação dos dados.
+- **Python / Seaborn**: visualização de dados e análise de tendências.
+- **Power BI**: geração de relatórios e dashboards interativos.
+
+## Considerações Metodológicas
+
+Durante o desenvolvimento, foram enfrentados e mitigados diversos desafios, como interferência de sinal, leitura simultânea de múltiplos cartões, e compartilhamento indevido de identificadores. Esses riscos foram tratados com testes de campo, ajustes físicos e criação de flags para revisão manual.
+
+A metodologia adotada buscou garantir a **precisão dos dados** (>90%), **redução de fraudes** (<10%) e **adoção real dos relatórios** (≥75% dos docentes e coordenadores), conforme as métricas de sucesso definidas.
+
