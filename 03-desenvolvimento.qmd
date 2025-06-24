@@ -1,6 +1,32 @@
 # Desenvolvimento
 
-Detalhe o processo de implementação.
+## Análise Exploratória
+
+Realizaram-se análises estatísticas e gráficos, com ênfase em:
+- A atribuição das pontuações aos estudantes.
+- A distribuição da frequência.
+- Relação entre presença e pontuação.
+
+Essas avaliações evidenciaram uma tendência evidente: estudantes que frequentam mais frequentemente tendem a alcançar melhores desempenhos acadêmicos.
+
+## Modelagem com Regresso de Floresta Aleatória
+
+O modelo Random Forest foi estabelecido e aprimorado para antecipar a classificação final dos estudantes com base na sua frequência.
+### Hiperparâmetros principais:
+- Quantidade de estimadores: 100
+- Profundidade máxima (max_depth): Não definida (árvores se desenvolveram de forma autônoma)
+- Estado Aleatório: 42 (para replicabilidade)
+### Avaliação do Modelo:
+
+- Erro Absoluto Médio (MAE): Representou a média do erro nas previsões.
+- Erro Quadrático Médio (MSE): Pune desvios maiores nas previsões.
+- R2 Score: Destacou que aproximadamente 82% da variação das notas pode ser explicada pela frequência, sugerindo um modelo sólido.
+
+Visualizações produzidas:
+
+Frequência - Distribuição.
+- Relação entre presença e pontuação.
+- Relevância dos parâmetros no modelo.
 
 ## Arquitetura da Solução
 
