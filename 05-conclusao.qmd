@@ -1,3 +1,17 @@
 # Conclusão
 
-Apresente as principais conclusões, dificuldades enfrentadas, próximos passos e sugestões.
+Este projeto evidenciou, através da análise de dados e do aprendizado de máquina, uma ligação direta entre a frequência escolar e o rendimento acadêmico.
+
+A elaboração de um modelo preditivo com base em Random Forest obteve êxito, explicando 82% da variação das notas dos estudantes.
+
+Para além dos resultados da modelagem, o sistema RFID se apresenta como uma solução eficaz para:
+- Melhorar a gestão de presença.
+- Coletar automaticamente informações para análises futuras.
+- Suportar a administração acadêmica de maneira eficaz.
+
+Proximos passos sugeridos:
+- Criação de um modelo experimental do sistema RFID.
+- Coleta de dados reais de presença por RFID para aprimoramento do modelo.
+- Ampliação da análise incorporando outros elementos, tais como envolvimento em atividades, rendimento em avaliações constantes e histórico acadêmico.
+
+Assim, o projeto cumpre sua função inicial de validar tecnicamente a importância do controle de presença automatizado para o avanço acadêmico.
