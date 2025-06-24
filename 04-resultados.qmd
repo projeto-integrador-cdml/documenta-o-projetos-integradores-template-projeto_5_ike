@@ -1,6 +1,22 @@
 # Resultados
 
-Apresente resultados do funcionamento do sistema, testes e validações.
+# Resultados
+
+Os resultados do modelo Random Forest aplicado ao problema de regressão foram os seguintes:
+
+- Média R2: 0.88
+- MAE: Indicador de baixa precisão média.
+- MSE: Também dentro de uma faixa tolerável, melhorando a precisão das previsões.
+
+Esses achados corroboram a hipótese inicial: existe uma correlação significativa entre a presença dos estudantes e suas notas.
+
+Principais Percepções:
+
+A presença na escola é um forte indicador do rendimento acadêmico.
+A automatização do registro de presença pode oferecer informações valiosas para as instituições educacionais.
+O modelo criado é capaz de antecipar com acurácia as notas dos estudantes com base na sua frequência.
+
+Essas percepções foram cruciais para demonstrar aos interessados a viabilidade da implementação do sistema RFID.
 
 ```{r}
 #| label: fig-dashboard
