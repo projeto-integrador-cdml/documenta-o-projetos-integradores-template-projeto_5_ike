@@ -1,47 +1,73 @@
 # Metodologia
 
-Explique como o projeto foi desenvolvido: metodologia ágil utilizada, etapas de desenvolvimento, ferramentas.
+ ## Informações sobre a Base de Dados
+ 
+ Este projeto fez uso de informações públicas sobre o rendimento de alunos do ensino secundário de duas instituições de ensino portuguesas: Gabriel Pereira (GP) e Mousinho da Silveira (MS).  A coleta de dados ocorreu através de relatórios escolares e questionários aplicados aos estudantes.
 
-## Tecnologias e Ferramentas
+ O dataset possui características associadas a:
+ 
+ - Notas dos três períodos (G1, G2, G3).
+ - Informações demográficas: idade, gênero, local de residência (urbano ou rural), número de membros da família e outros.
+ - Fatores sociais: situação familiar, conexão com a internet, conexão amorosa, entre outros.
+ - Elementos acadêmicos: horas de estudo por semana, atividades extracurriculares, suporte educacional, ausências e reprovações passadas.   
+### Atributos do Dataset
 
-- RAG com LlamaIndex e OpenAI
-- Orquestração com N8N
-- Frontend em React, Backend em FastAPI
-- Base vetorizada em FAISS
-- GitHub Actions para CI/CD
+- school: escola do estudante (GP ou MS)
+- sex: gênero (F ou M)
+- age: idade (15 a 22 anos)
+- address: tipo de endereço (U - urbano, R - rural)
+- famsize: tamanho da família (LE3 ≤ 3, GT3 > 3)
+- Pstatus: situação de coabitação dos pais (T - juntos, A - separados)
+- Medu / Fedu: escolaridade da mãe e do pai (0 a 4)
+- Mjob / Fjob: profissão da mãe/pai (teacher, health, services, at_home, other)
+- reason: motivo para escolha da escola (home, reputation, course, other)
+- guardian: responsável (mother, father, other)
+- traveltime: tempo de deslocamento até a escola (1 - <15min a 4 - >1h)
+- studytime: tempo de estudo semanal (1 - <2h a 4 - >10h)
+- failures: número de reprovações anteriores (0 a 4)
+- schoolsup: apoio educacional extra (yes/no)
+- famsup: apoio da família (yes/no)
+- paid: aulas extras pagas (yes/no)
+- activities: atividades extracurriculares (yes/no)
+- nursery: frequentou pré-escola (yes/no)
+- higher: desejo de cursar ensino superior (yes/no)
+- internet: acesso à internet em casa (yes/no)
+- romantic: possui relacionamento amoroso (yes/no)
+- famrel: qualidade do relacionamento familiar (1 - ruim a 5 - excelente)
+- freetime: tempo livre após a escola (1 a 5)
+- goout: frequência de saída com amigos (1 a 5)
+- Dalc: consumo de álcool durante a semana (1 a 5)
+- Walc: consumo de álcool no final de semana (1 a 5)
+- health: estado de saúde (1 - muito ruim a 5 - muito bom)
+- absences: número de faltas (0 a 93)                                                                                                                                                                                                   
+### Variáveis de Notas:
+- G1: nota do 1º período (0 a 20)
+- G2: nota do 2º período (0 a 20)
+- G3: nota final do ano (0 a 20) — variável alvo do modelo
 
-# Metodologia
+### Tecnologias e Ferramentas
+
+Python: Uma linguagem usada para análise e modelagem.
+Pandas, Matplotlib, Seaborn, Scikit-Learn.
+- Aprendizado de Máquina: Retorno de Floresta Aleatória
+
+### Etapas de Desenvolvimento
+
 
 O desenvolvimento deste projeto foi orientado por uma abordagem iterativa e incremental, inspirada nos princípios da metodologia ágil. O foco foi construir uma solução funcional e ajustável ao longo das etapas, com entregas parciais que permitiram validar hipóteses e ajustar a arquitetura conforme necessário.
+. Analise e Compreensão dos Dados: Análise das relações entre as variáveis, distribuição das mesmas e interpretação dos dados.
+.:. Higienização e Pré-tratamento:
+- Manipulação de valores incongruentes.
+- Ajuste das variáveis numéricas utilizando o MinMaxScaler.
+... Distribuição das Informações:
+- Divisão em grupos de treinamento e teste (80/20).
+. Desenho:
+- Uso do algoritmo Random Forest para antecipar a pontuação final (G3).
+Cinco. Exame do Modelo:
+- MAE (Erro Médio Absoluto)
+- MSE (Erro Médio Quadrático)
+- Coeficiente de Determinação (R2)                                                                                                                                                                                                             
+O modelo foi analisado com o objetivo de quantificar o impacto de fatores como presença, frequência e elementos sociais no rendimento acadêmico dos estudantes.
 
-## Etapas de Desenvolvimento
 
-O projeto foi dividido em três grandes frentes de atuação: **hardware e instalação**, **backend e processamento de dados**, e **visualização de dados**.
-
-### 1. Hardware e Instalação
-
-A primeira fase envolveu a instalação de dispositivos de identificação por radiofrequência (RFID UHF) nas portas das salas de aula. Foi realizada a configuração e o posicionamento estratégico das antenas, com testes de leitura e ajustes para garantir cobertura adequada. Essa etapa foi essencial para garantir a captação precisa dos dados de entrada e saída dos alunos.
-
-### 2. Backend e Pipeline de Dados
-
-Na segunda etapa, foi definido o modelo de dados e criado o schema em um banco relacional (SQL Server ou MySQL). Para ingestão dos eventos de presença em tempo real, foi desenvolvida uma API utilizando os frameworks **FastAPI** ou **Flask**. Em seguida, implementou-se um pipeline de tratamento dos dados com a biblioteca **Pandas**, envolvendo limpeza, remoção de duplicidades e validação das leituras. A partir desses dados tratados, foi possível calcular o tempo de permanência em sala e classificar saídas breves.
-
-### 3. Dashboards e Relatórios
-
-A última etapa focou na visualização dos dados. Foram definidos KPIs como **taxa de presença**, **taxa de evasão** e **tempo médio de permanência**. O **Power BI** foi conectado ao banco de dados para permitir a atualização automatizada dos relatórios. Os dashboards incluem filtros por turma, sala e período, permitindo uma análise detalhada por parte dos coordenadores e professores.
-
-## Ferramentas Utilizadas
-
-- **RFID UHF**: tecnologia de identificação para captação da presença.
-- **SQL Server/MySQL**: armazenamento relacional dos dados.
-- **FastAPI / Flask**: ingestão de eventos de presença via API.
-- **Python / Pandas**: tratamento, análise e validação dos dados.
-- **Python / Seaborn**: visualização de dados e análise de tendências.
-- **Power BI**: geração de relatórios e dashboards interativos.
-
-## Considerações Metodológicas
-
-Durante o desenvolvimento, foram enfrentados e mitigados diversos desafios, como interferência de sinal, leitura simultânea de múltiplos cartões, e compartilhamento indevido de identificadores. Esses riscos foram tratados com testes de campo, ajustes físicos e criação de flags para revisão manual.
-
-A metodologia adotada buscou garantir a **precisão dos dados** (>90%), **redução de fraudes** (<10%) e **adoção real dos relatórios** (≥75% dos docentes e coordenadores), conforme as métricas de sucesso definidas.
 
