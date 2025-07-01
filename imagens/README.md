@@ -1,7 +1,6 @@
+# Projeto Integrador I - Template Quarto
 
-# Projeto Integrador III - Template Quarto
-
-Este repositório é um modelo de documentação para o Projeto Integrador III dos cursos de Ciência de Dados e Machine Learning do CEUB. Ele está formatado segundo as normas da ABNT e estruturado com o sistema Quarto.
+Este repositório é um modelo de documentação para o Projeto Integrador I dos cursos de Ciência de Dados e Machine Learning do CEUB. Ele está formatado segundo as normas da ABNT e estruturado com o sistema Quarto.
 
 ## 📄 Estrutura
 

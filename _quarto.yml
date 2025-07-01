@@ -1,0 +1,51 @@
+# GITHub:
+project:
+  type: book
+  output-dir: _book # pasta onde os arquivos gerados serão salvos
+
+book:
+  title: "Projeto Integrador I: Análise de Desempenho Acadêmico x Presença em Sala"
+  author: "Seu Nome Completo"
+  date: today
+  chapters:
+    - index.qmd
+    - 01-introducao.qmd
+    - 02-metodologia.qmd
+    - 03-desenvolvimento.qmd
+    - 04-resultados.qmd
+    - 05-conclusao.qmd
+    - referencias.qmd
+
+format:
+  pdf:
+    pdf-engine: lualatex
+    include-in-header: contracapa.tex # adiciona a contracapa no estilo ABNT
+    toc: true
+    number-sections: true
+  html:
+    toc: true
+    number-sections: true
+    theme: cosmo # ou outra como: united, flatly, simplex, etc.
+    self-contained: true
+
+execute:
+  echo: true
+  eval: true
+  freeze: false # sempre reexecuta os blocos de código Python
+
+editor: visual
+# # HTML options:
+# website:
+#   title: "Projeto Integrador I"
+#   navbar:
+#     left:
+#       - text: "Início"
+#         href: index.html
+#   page-navigation: true
+
+#   # importante para GitHub Pages
+#   repo-url: https://github.com/ikekenard/projeto-integrador-cdml/grupos-pi-i-2025-projeto_5_ike.git
+#   repo-actions: [edit, issue]
+
+#   # pasta usada pelo GitHub Pages
+#   output-dir: docs
