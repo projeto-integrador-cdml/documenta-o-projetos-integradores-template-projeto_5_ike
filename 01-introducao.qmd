@@ -8,3 +8,11 @@ A partir de dados estruturados contendo registros de frequência e notas, aplica
 
 A relevância do estudo se justifica diante dos desafios contemporâneos da educação, especialmente em períodos pós-pandemia, nos quais a evasão e a queda de rendimento tornaram-se ainda mais críticas. Assim, espera-se que os resultados obtidos contribuam para a compreensão mais profunda do comportamento estudantil e orientem ações de intervenção com base em dados.
 
+## Contribuições individuais: 
+Ike: Oganizou 90% da documentação, reorganizou graficos e textos do documento
+Leonardo: As 2 apresentações, estrutura do projeto
+Marcelo: Análise estatística e Modelo
+Rafael: análise Bi de dados 
+Vitor: Gerou os textos, gerou os graficos
+Rodrigo: pesquisa de bases de dados 
+Alessandra: correção dos textos
